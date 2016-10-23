@@ -4,13 +4,13 @@
 # Revision: 1.0
 # Auther: 盛况
 # Date: 2016-10-19
-# Description: 脚本在snat机器运行，用于备份数据库数据
+# Description: 脚本在任意单台机器运行，用于备份数据库数据
 # Usage: 0 3 * * * root /bin/bash /opt/dsheng/db_backup.sh  \
 #       &> /tmp/db_backup.log
 # Question: 
 # Notes:        a).每天通过crontab 03:00 运行一次。
-# Notes:		b).保留三个备份，超过三天的文件会被认为是'old_backup_files'\
-# Notes:		c).下一版本可能需要将备份文件加密，传输下来再解密。 
+# Notes:	b).保留三个备份，超过三天的文件会被认为是'old_backup_files'\
+# Notes:	c).下一版本可能需要将备份文件加密，传输下来再解密。 
 # ----------------------------------------------------------------------------
 
 backup_file_path="/data/backup/db_backup"
