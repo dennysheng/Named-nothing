@@ -51,6 +51,7 @@ if [ ${old_backup_files_count} -gt 3 ];
 then
 	echo "$(date +%Y%m%d_%H:%M:%S)[INFO]Here are old backup files need to be removed." \
 	>> ${log_file}
+	echo "$(date +%Y%m%d_%H:%M:%S)[INFO]Removing old backup files: ${old_backup_files}..."
 	rm -rf ${old_backup_files}
 	echo "$(date +%Y%m%d_%H:%M:%S)[INFO]Old backup file(s) removed done!" >> ${log_file}
 else
